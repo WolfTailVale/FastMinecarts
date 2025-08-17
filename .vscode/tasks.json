@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build FastMinecarts JAR",
+			"type": "shell",
+			"command": "mkdir",
+			"args": [
+				"-Force",
+				"target",
+				"&&",
+				"javac",
+				"-cp",
+				".",
+				"-d",
+				"target",
+				"src/main/java/me/certainly1182/fastminecarts/FastMinecarts.kt"
+			],
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		}
+	]
+}

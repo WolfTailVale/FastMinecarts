@@ -2,3 +2,16 @@ name: FastMinecarts
 version: '${project.version}'
 main: me.certainly1182.fastminecarts.FastMinecarts
 api-version: 1.21
+author: WolfTailVale
+description: A plugin to control minecart speeds based on blocks beneath rails
+
+commands:
+  fastminecarts:
+    description: FastMinecarts main command
+    usage: /<command> [reload]
+    aliases: [fm, fastcarts]
+
+permissions:
+  fastminecarts.reload:
+    description: Allows reloading the FastMinecarts configuration
+    default: op
